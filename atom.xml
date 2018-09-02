@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Terry&#39;s Blog</title>
+  
+  <subtitle>Live the life you love</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://terrylovessmiles.github.io/"/>
+  <updated>2018-08-23T13:21:08.277Z</updated>
+  <id>https://terrylovessmiles.github.io/</id>
+  
+  <author>
+    <name>Terry</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Git&amp;GitHub从安装到使用</title>
+    <link href="https://terrylovessmiles.github.io/2018/08/09/Git%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/"/>
+    <id>https://terrylovessmiles.github.io/2018/08/09/Git的安装与使用/</id>
+    <published>2018-08-09T06:00:36.000Z</published>
+    <updated>2018-08-23T13:21:08.277Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote class="blockquote-center"><br><br># 一： 前言<br><br>IT界一直流传这样一句话,身为一名合格的程序员，如果对Git不能熟练使用，那就妄称自己是程序员了，那我们就从GIt安装开始吧<br><br></blockquote><a id="more"></a><h2 id="一-小白安装"><a href="#一-小白安装" class="headerlink" title="一   小白安装"></a>一   小白安装</h2><h3 id="Terry和你一起从新手出发-Git世界探索之路从现在开始"><a href="#Terry和你一起从新手出发-Git世界探索之路从现在开始" class="headerlink" title="Terry和你一起从新手出发,Git世界探索之路从现在开始"></a>Terry和你一起从新手出发,Git世界探索之路从现在开始</h3><p>目的：通过git管理GitHub托管项目代码下载：（git是一个软件，分32位，64位）安装：注意这两步，其他的都选next检验：鼠标在桌面右击，出现两个Git Gui here   和Git Bash here ,说明安装成功 <img src="https://cdn.nlark.com/yuque/0/2018/png/97622/1532189530352-31a02344-402b-4dfd-972b-2523a13ce211.png" alt="img"> <img src="https://cdn.nlark.com/yuque/0/2018/png/97622/1532189667051-1da7cff8-9917-4ba4-bb57-5f83273fa3da.png" alt="img"> </p><h2 id="二-Git最核心也是最基础的几个概念"><a href="#二-Git最核心也是最基础的几个概念" class="headerlink" title="二  Git最核心也是最基础的几个概念"></a>二  Git最核心也是最基础的几个概念</h2><h3 id="2-1-Git-工作区域："><a href="#2-1-Git-工作区域：" class="headerlink" title="2.1 Git 工作区域："></a>2.1 Git 工作区域：</h3><p>代码提交流程【3—–》2——–》1】</p><h3 id="1-Git-Repository"><a href="#1-Git-Repository" class="headerlink" title="1   Git Repository"></a>1   Git Repository</h3><p>（Git 仓库）：</p><p>最终确定的文件保存到仓库，成为一个新的版本，并且对他人可见</p><h3 id="2-暂存区-："><a href="#2-暂存区-：" class="headerlink" title="2  暂存区     ："></a>2  暂存区     ：</h3><p>暂存已经修改的文件，最后统一提交到git仓库中</p><h3 id="3-Working-Dictionary"><a href="#3-Working-Dictionary" class="headerlink" title="3 Working Dictionary"></a>3 Working Dictionary</h3><p> (工作区）  :</p><p>添加，编辑，修改等动作</p><h2 id="2-2-不同区的来回跑"><a href="#2-2-不同区的来回跑" class="headerlink" title="2.2 不同区的来回跑"></a>2.2 不同区的来回跑</h2><h3 id="2-2-1工作区—–》暂存区"><a href="#2-2-1工作区—–》暂存区" class="headerlink" title="2.2.1工作区—–》暂存区"></a>2.2.1工作区—–》暂存区</h3><p>git status                                               （查看文件在哪个区）<br>git add hello.java</p><h3 id="2-2-2暂存区——》仓库"><a href="#2-2-2暂存区——》仓库" class="headerlink" title="2.2.2暂存区——》仓库"></a>2.2.2暂存区——》仓库</h3><p>git status<br>git commit -m “提交描述”</p><p>仓库<br>git  status</p><h2 id="三-Git在本地的操作"><a href="#三-Git在本地的操作" class="headerlink" title="三   Git在本地的操作"></a>三   Git在本地的操作</h2><h3 id="3-1-基本信息设置"><a href="#3-1-基本信息设置" class="headerlink" title="3.1  基本信息设置"></a>3.1  基本信息设置</h3><p>用户名和邮箱是唯一的，当你fork一个项目，点进去查看时，会看到最近提交Pull Requests的人的信息，写错了就是别人了<br>设置用户名<br>git config –global user.name ‘TerryLovesSmiles’<br>设置邮箱<br>git config –global user.email <a href="mailto:&#39;1164402695@qq.com" target="_blank" rel="noopener">&#39;1164402695@qq.com</a>‘<br>注意： 该设置在GitHub主页显示谁提交了该文件</p><h3 id="3-2-初始化一个新的Git仓库"><a href="#3-2-初始化一个新的Git仓库" class="headerlink" title="3.2 初始化一个新的Git仓库"></a>3.2 初始化一个新的Git仓库</h3><p>创建文件夹        mkdir test<br>在文件内初始化git(创建git仓库     cd test        pwd       git init         (会生成.git隐藏文件（存储仓库的本地信息的），看不到的话，就设置下显示隐藏文件喽)</p><h3 id="3-3-向仓库中添加文件"><a href="#3-3-向仓库中添加文件" class="headerlink" title="3.3 向仓库中添加文件"></a>3.3 向仓库中添加文件</h3><p>（工作区—–》暂存区—》git 仓库</p><p>touch a1.java      —–&gt;新建一个文件<br> git add a1.java<br>git commit -m “add a1.java”</p><h3 id="3-4-修改文件"><a href="#3-4-修改文件" class="headerlink" title="3.4  修改文件"></a>3.4  修改文件</h3><p>(修改过后，再次重新add到暂存区,commit)</p><p>vi test  编辑<br>cat test  显示出来文件内的信息<br>git status<br>git add test           暂存区的a1.java是蓝色的<br>git commit test -m “modify test”</p><h3 id="3-5-删除文件"><a href="#3-5-删除文件" class="headerlink" title="3.5 删除文件"></a>3.5 删除文件</h3><p>rm -rf a1.java<br>git rm a1.java<br>git commit a1.java -m “rm a1.java”</p><h2 id="4-Git远程仓库"><a href="#4-Git远程仓库" class="headerlink" title="4 Git远程仓库"></a>4 Git远程仓库</h2><p>###4.1 作用：备份。    实现代码的共享。</p><p> 工作区—add–》暂存区—commit—》Git仓库（本地）–push—–》Git远程仓库</p><p>git congig –list    查看配置信息</p><h3 id="4-2-Git克隆"><a href="#4-2-Git克隆" class="headerlink" title="4.2  Git克隆"></a>4.2  Git克隆</h3><p>目的   将远程仓库（github对应的项目）复制到本地<br>代码 ：  git clone 仓库地址<br>…….<br>git push   (会报错    即让你输入用户名和密码)</p><p>办法<br>将  [remote “origin”]<br>    url = <a href="https://github.com/用户名/仓库名.git" target="_blank" rel="noopener">https://github.com/用户名/仓库名.git</a><br>改为  [remote “origin”]<br>    url = https://用户名:密码@github.com/用户名/仓库名.git</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;br&gt;&lt;br&gt;# 一： 前言&lt;br&gt;&lt;br&gt;IT界一直流传这样一句话,身为一名合格的程序员，如果对Git不能熟练使用，那就妄称自己是程序员了，那我们就从GIt安装开始吧&lt;br&gt;&lt;br&gt;&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="Git&amp;GitHub" scheme="https://terrylovessmiles.github.io/categories/Git-GitHub/"/>
+    
+    
+      <category term="Git小白篇" scheme="https://terrylovessmiles.github.io/tags/Git%E5%B0%8F%E7%99%BD%E7%AF%87/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo个性优化大全</title>
+    <link href="https://terrylovessmiles.github.io/2018/08/09/Hexo%E4%B8%AA%E6%80%A7%E4%BC%98%E5%8C%96%E5%A4%A7%E5%85%A8/"/>
+    <id>https://terrylovessmiles.github.io/2018/08/09/Hexo个性优化大全/</id>
+    <published>2018-08-09T05:23:00.000Z</published>
+    <updated>2018-08-22T14:24:56.806Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="一-前言"><a href="#一-前言" class="headerlink" title="一  前言"></a>一  前言</h2><p>万丈高楼平地起，昨天我们把Hexo博客搭成了自己的小窝，那么今天！！！</p><p>Terry告诉你：史上最全的next主题优化教程来了！</p><p>来吧！和Terry一起把Hexo从小木屋搭成小洋楼！！！</p><a id="more"></a><h2 id="第一步，基本功能的完善"><a href="#第一步，基本功能的完善" class="headerlink" title="第一步，基本功能的完善"></a>第一步，基本功能的完善</h2><p>来Next的使用中文官网，照着做，一步一步来，没有比这更详细的基础搭配了</p><p>[Next使用文档]<a href="http://theme-next.iissnan.com/" target="_blank" rel="noopener">http://theme-next.iissnan.com/</a>:</p><h2 id="第二步，个性化优化"><a href="#第二步，个性化优化" class="headerlink" title="第二步，个性化优化"></a>第二步，个性化优化</h2><p>这位老哥的Hexo优化博客，被网上疯狂转载，我的博客优化70%基本都来源于这篇博客</p><p><a href="http://shenzekun.cn/hexo%E7%9A%84next%E4%B8%BB%E9%A2%98%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B.html" target="_blank" rel="noopener">超详细进阶优化</a></p><h2 id="第三步-，超全的进阶优化"><a href="#第三步-，超全的进阶优化" class="headerlink" title="第三步 ，超全的进阶优化"></a>第三步 ，超全的进阶优化</h2><p>你再也不用费心思到处找了，都在这啦！！！</p><ol><li>看到文章左边的分享按钮了吗？<a href="https://asdfv1929.github.io/2018/05/25/baidu-share/" target="_blank" rel="noopener">他来源于这</a></li><li>看到文章下边的评论系统了吗？<a href="https://blog.csdn.net/blue_zy/article/details/79071414" target="_blank" rel="noopener">你可以参考这</a></li><li>看到Hexo左下角的音乐播放了吗？<a href="https://asdfv1929.github.io/2018/05/26/next-add-music/" target="_blank" rel="noopener">来。兄dei看这</a></li><li>主页文章，能我点阅读全文再展开吗？<a href="https://blog.csdn.net/ganzhilin520/article/details/79047988" target="_blank" rel="noopener">嘿嘿，可以呀</a></li><li>背景图片看起来，哎呀，不错吆！<a href="https://ihaoming.top/archives/d0564105.html#more" target="_blank" rel="noopener">来这</a></li><li>Hexo-admin后台管理，任何地方都可以更新博客了<a href="https://www.cnblogs.com/xingyunblog/p/8681205.html" target="_blank" rel="noopener">来吧</a></li></ol><h1 id="第四步-兄dei们，你们看着办吧"><a href="#第四步-兄dei们，你们看着办吧" class="headerlink" title="第四步  兄dei们，你们看着办吧"></a>第四步  兄dei们，你们看着办吧</h1><p>Terry利用闲暇基本所有时间整理了三天，现在全在这了，空荡荡的看完就走，你的良心不会痛吗。。。（微笑脸）</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;一-前言&quot;&gt;&lt;a href=&quot;#一-前言&quot; class=&quot;headerlink&quot; title=&quot;一  前言&quot;&gt;&lt;/a&gt;一  前言&lt;/h2&gt;&lt;p&gt;万丈高楼平地起，昨天我们把Hexo博客搭成了自己的小窝，那么今天！！！&lt;/p&gt;
+&lt;p&gt;Terry告诉你：史上最全的next主题优化教程来了！&lt;/p&gt;
+&lt;p&gt;来吧！和Terry一起把Hexo从小木屋搭成小洋楼！！！&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Hexo" scheme="https://terrylovessmiles.github.io/categories/Hexo/"/>
+    
+    
+      <category term="Hexo优化" scheme="https://terrylovessmiles.github.io/tags/Hexo%E4%BC%98%E5%8C%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo+GitPages--从0搭建，再也不羡慕别人了！</title>
+    <link href="https://terrylovessmiles.github.io/2018/08/08/Hexo-GitPages-%E4%BB%8E0%E6%90%AD%E5%BB%BA%E5%88%B0%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/"/>
+    <id>https://terrylovessmiles.github.io/2018/08/08/Hexo-GitPages-从0搭建到基本配置/</id>
+    <published>2018-08-08T07:59:34.000Z</published>
+    <updated>2018-08-09T04:48:41.903Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="一-前言："><a href="#一-前言：" class="headerlink" title="一 前言："></a>一 前言：</h2><h3 id="为什么会想到要自己搭博客呢？"><a href="#为什么会想到要自己搭博客呢？" class="headerlink" title="为什么会想到要自己搭博客呢？"></a>为什么会想到要自己搭博客呢？</h3><p>  一方面一直对传说中的自己搭一个博客充满了敬佩和好奇，另一方面对别人自己好看的博客真的是羡慕呀！再加上实在无法忍受csdn等老牌博客网站无处不在的广告突袭。。。受不了，那就搭喽！<br><a id="more"></a></p><h3 id="搭建心得"><a href="#搭建心得" class="headerlink" title="搭建心得"></a>搭建心得</h3><p>   搭的时候，心态初期感觉难如登天，因为教程太多了，有些常识大佬不提，可对自己来说，那个真的不是常识呀！QAQ 。。。老是报各种错误。。<br>   心态中后期，发现报的错都是普遍的常见错。。。网上解决方法太多了，真是爱死度娘了<br>   好了，话不多说，正式开始</p><h2 id="二-用Hexo在本地搭建一个博客"><a href="#二-用Hexo在本地搭建一个博客" class="headerlink" title="二  用Hexo在本地搭建一个博客"></a>二  用Hexo在本地搭建一个博客</h2><h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><p>   1.下载安装nodejs</p><pre><code>  http://nodejs.cn/ 傻瓜式安装  2. 下载安装git  https://git-scm.com/downloads 傻瓜式安装  3. 在gitBash命令行使用npm安装Hexo      npm install -g hexo-cli     //在gitBash命令里</code></pre><h3 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h3><p>   1.在桌面新建个文件夹blog，在GitBash里进入这个文件夹,输入</p><pre><code>注意：blog是自己建的空白项目文件名       hexo i blog //init的缩写        cd blog //切换到站点根目录       hexo g //generetor的缩写       hexo s //server的缩写  2.  打开浏览器输入localhost:4000查看：</code></pre><p>  <img src="https://note.youdao.com/yws/api/personal/file/C808C8261FE2459D9B925CEF556BB83B?method=download&amp;shareKey=6cefff581dd31aed946d8753f17599be" alt="image"></p><p>这个是Hexo的默认博客主题。看到这个说明在本地已经搭建成功了</p><h3 id="选择主题-Next"><a href="#选择主题-Next" class="headerlink" title="选择主题-Next"></a>选择主题-Next</h3><ol><li>在站点根目录输入</li></ol><figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone http<span class="variable">s:</span>//github.<span class="keyword">com</span>/iissnan/hexo-theme-<span class="keyword">next</span> themes/<span class="keyword">next</span></span><br></pre></td></tr></table></figure><ol start="2"><li>完成后，打开站点配置文件， 找到theme 字段，把landscape更改为next</li><li>在终端输入<figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hexo clean  <span class="comment">//清除缓存</span></span><br><span class="line">hexo g  <span class="comment">//重新生成代码</span></span><br><span class="line">hexo s  <span class="comment">//部署到本地</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//然后打开浏览器访问 localhost:4000 查看效果</span></span><br></pre></td></tr></table></figure></li></ol><p><img src="https://note.youdao.com/yws/api/personal/file/C808C8261FE2459D9B925CEF556BB83B?method=download&amp;shareKey=6cefff581dd31aed946d8753f17599be" alt="image"></p><p>nexT主题有三种选择，这个只是最简洁的一种，我们选择最好看的那个。</p><p>Muse -默认Scheme，这是NexT最初的版本，黑白主调，大量留白<br>Mist - Muse的紧凑版本，整洁有序的单栏外观<br>Pisces -双栏Scheme，小家碧玉似的清新</p><ol start="4"><li>配置nexT</li></ol><p>ctrl+f 搜素scheme , 选择pisces<br>然后重新clean，generator，查看效果:<br><img src="https://note.youdao.com/yws/api/personal/file/FB34B886E1D44111A1210ABDD1790D89?method=download&amp;shareKey=7bbef245bcf4d31f0eb276512107de7c" alt="image"></p><h2 id="三-将本地博客上传到GitHub"><a href="#三-将本地博客上传到GitHub" class="headerlink" title="三 将本地博客上传到GitHub"></a>三 将本地博客上传到GitHub</h2><p>因为我们想要的是通过网址访问，所以接下来还要搭到GitHub上</p><p>具体的可以看<br><a href="https://blog.csdn.net/Hoshea_chx/article/details/78826689" target="_blank" rel="noopener">这个博客</a></p><h2 id="四-注意！！！"><a href="#四-注意！！！" class="headerlink" title="四 注意！！！"></a>四 注意！！！</h2><p>在修改Hexo的站点文件时</p><p>冒号的后面一定一定一定要有一个空格！！（大坑）</p><h2 id="五-发布你的第一篇博客"><a href="#五-发布你的第一篇博客" class="headerlink" title="五 发布你的第一篇博客"></a>五 发布你的第一篇博客</h2><p>根目录下输入：</p><figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">hexo <span class="keyword">new</span> <span class="string">"postName"</span></span><br><span class="line"> <span class="comment">//hexo n 也可以 </span></span><br><span class="line"> <span class="comment">//你自己的博客名称，名为postName.md的文件会建在目</span></span><br><span class="line"> <span class="comment">//录/blog/source/_posts下。</span></span><br><span class="line"></span><br><span class="line">文章编辑完成后，终端在根目录文件夹下，执行如下命令来发布:</span><br><span class="line"></span><br><span class="line">hexo g <span class="comment">//生成静态页面</span></span><br><span class="line">hexo d <span class="comment">//发布</span></span><br></pre></td></tr></table></figure><h2 id="六-后记"><a href="#六-后记" class="headerlink" title="六 后记"></a>六 后记</h2><p>这个只是最简单的博客的搭建，相当于盖房子。盖了一个小木屋，成长为参天大树还需要进一步个性化配置</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;一-前言：&quot;&gt;&lt;a href=&quot;#一-前言：&quot; class=&quot;headerlink&quot; title=&quot;一 前言：&quot;&gt;&lt;/a&gt;一 前言：&lt;/h2&gt;&lt;h3 id=&quot;为什么会想到要自己搭博客呢？&quot;&gt;&lt;a href=&quot;#为什么会想到要自己搭博客呢？&quot; class=&quot;headerlink&quot; title=&quot;为什么会想到要自己搭博客呢？&quot;&gt;&lt;/a&gt;为什么会想到要自己搭博客呢？&lt;/h3&gt;&lt;p&gt;  一方面一直对传说中的自己搭一个博客充满了敬佩和好奇，另一方面对别人自己好看的博客真的是羡慕呀！再加上实在无法忍受csdn等老牌博客网站无处不在的广告突袭。。。受不了，那就搭喽！&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Hexo" scheme="https://terrylovessmiles.github.io/categories/Hexo/"/>
+    
+    
+      <category term="Hexo搭建" scheme="https://terrylovessmiles.github.io/tags/Hexo%E6%90%AD%E5%BB%BA/"/>
+    
+  </entry>
+  
+</feed>
