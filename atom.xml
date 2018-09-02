@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://terrylovessmiles.github.io/"/>
-  <updated>2018-08-23T13:21:08.277Z</updated>
+  <updated>2018-09-02T07:26:49.450Z</updated>
   <id>https://terrylovessmiles.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>测试</title>
+    <link href="https://terrylovessmiles.github.io/2018/09/02/%E6%B5%8B%E8%AF%95/"/>
+    <id>https://terrylovessmiles.github.io/2018/09/02/测试/</id>
+    <published>2018-09-02T07:25:09.000Z</published>
+    <updated>2018-09-02T07:26:49.450Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="换电脑测试"><a href="#换电脑测试" class="headerlink" title="换电脑测试"></a>换电脑测试</h1><h2 id="测试开始"><a href="#测试开始" class="headerlink" title="测试开始"></a>测试开始</h2><p>今天是个好日子</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;换电脑测试&quot;&gt;&lt;a href=&quot;#换电脑测试&quot; class=&quot;headerlink&quot; title=&quot;换电脑测试&quot;&gt;&lt;/a&gt;换电脑测试&lt;/h1&gt;&lt;h2 id=&quot;测试开始&quot;&gt;&lt;a href=&quot;#测试开始&quot; class=&quot;headerlink&quot; title=&quot;测试开始&quot;
+      
+    
+    </summary>
+    
+      <category term="测试" scheme="https://terrylovessmiles.github.io/categories/%E6%B5%8B%E8%AF%95/"/>
+    
+    
+      <category term="计算" scheme="https://terrylovessmiles.github.io/tags/%E8%AE%A1%E7%AE%97/"/>
+    
+  </entry>
   
   <entry>
     <title>Git&amp;GitHub从安装到使用</title>
