@@ -2054,7 +2054,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #4bff54;
+  background: #e7a6ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2945,6 +2945,12 @@ pre {
   margin-top: 20px;
   padding-left: 0;
   text-align: center;
+}
+body {
+  background-image: url("/images/background.png");
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background-size: contain;
 }
 .bg_content {
   position: fixed;
