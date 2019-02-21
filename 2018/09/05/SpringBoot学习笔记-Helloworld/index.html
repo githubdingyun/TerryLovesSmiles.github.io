@@ -203,6 +203,8 @@
         }
     })();
 </script>
+
+
 <style>
     .pace .pace-progress {
         background: #1E92FB; /*进度条颜色*/
@@ -216,6 +218,23 @@
         border-left-color: #1E92FB;    /*左边框颜色*/
     }
 </style>
+
+<script src="\js\src\custom\instantclick.min.js" data-no-instant></script>
+   <script data-no-instant>
+   InstantClick.on('change', function(isInitialLoad) {
+     if (isInitialLoad === false) {
+       if (typeof MathJax !== 'undefined') // support MathJax
+         MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+       if (typeof prettyPrint !== 'undefined') // support google code prettify
+         prettyPrint();
+       if (typeof _hmt !== 'undefined')  // support 百度统计
+         _hmt.push(['_trackPageview', location.pathname + location.search]);
+       if (typeof ga !== 'undefined')  // support google analytics
+           ga('send', 'pageview', location.pathname + location.search);
+     }
+   });
+   InstantClick.init();
+</script>
   <title>SpringBoot学习笔记-Helloworld | Terry's Blog</title>
   
 
@@ -1672,18 +1691,8 @@ show_date_time();
 
   
 
-  <!-- 页面点击小红心 -->
-
-<script type="text/javascript" src="/lib/clipboard/clipboard.js"></script>
-<script type="text/javascript" src="/js/src/custom.js"></script>
-<!-- 点击特效 -->
-<canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas>
-<script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
-<script type="text/javascript" src="/js/src/fireworks.js"></script>
-
-
-<script type="text/javascript" src="/lib/zclip/clipboard.min.js"></script>
-<script type="text/javascript" src="/js/src/custom.js"></script>
+  <!-- 小红心 -->
+<script type="text/javascript" src="/js/src/love.js"></script>
 
 <!--崩溃欺骗-->
 <script type="text/javascript" src="/js/src/crash_cheat.js"></script>

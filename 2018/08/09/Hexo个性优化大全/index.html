@@ -153,10 +153,12 @@
 <meta property="og:site_name" content="Terry&#39;s Blog">
 <meta property="og:description" content="一  前言万丈高楼平地起，昨天我们把Hexo博客搭成了自己的小窝，那么今天！！！ Terry告诉你：史上最全的next主题优化教程来了！ 来吧！和Terry一起把Hexo从小木屋搭成小洋楼！！！">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-02-19T12:06:39.678Z">
+<meta property="og:image" content="https://haha-1257208827.cos.ap-guangzhou.myqcloud.com/Hexo%2F3.jpg">
+<meta property="og:updated_time" content="2019-02-19T13:36:02.957Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo个性优化大全">
 <meta name="twitter:description" content="一  前言万丈高楼平地起，昨天我们把Hexo博客搭成了自己的小窝，那么今天！！！ Terry告诉你：史上最全的next主题优化教程来了！ 来吧！和Terry一起把Hexo从小木屋搭成小洋楼！！！">
+<meta name="twitter:image" content="https://haha-1257208827.cos.ap-guangzhou.myqcloud.com/Hexo%2F3.jpg">
 
 
 
@@ -203,6 +205,8 @@
         }
     })();
 </script>
+
+
 <style>
     .pace .pace-progress {
         background: #1E92FB; /*进度条颜色*/
@@ -216,6 +220,23 @@
         border-left-color: #1E92FB;    /*左边框颜色*/
     }
 </style>
+
+<script src="\js\src\custom\instantclick.min.js" data-no-instant></script>
+   <script data-no-instant>
+   InstantClick.on('change', function(isInitialLoad) {
+     if (isInitialLoad === false) {
+       if (typeof MathJax !== 'undefined') // support MathJax
+         MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+       if (typeof prettyPrint !== 'undefined') // support google code prettify
+         prettyPrint();
+       if (typeof _hmt !== 'undefined')  // support 百度统计
+         _hmt.push(['_trackPageview', location.pathname + location.search]);
+       if (typeof ga !== 'undefined')  // support google analytics
+           ga('send', 'pageview', location.pathname + location.search);
+     }
+   });
+   InstantClick.init();
+</script>
   <title>Hexo个性优化大全 | Terry's Blog</title>
   
 
@@ -457,7 +478,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-02-19T20:06:39+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2019-02-19T21:36:02+08:00">
                 2019-02-19
               </time>
             
@@ -569,7 +590,8 @@
       
 
       
-        <h2 id="一-前言"><a href="#一-前言" class="headerlink" title="一  前言"></a>一  前言</h2><p>万丈高楼平地起，昨天我们把Hexo博客搭成了自己的小窝，那么今天！！！</p>
+        <p><img src="https://haha-1257208827.cos.ap-guangzhou.myqcloud.com/Hexo%2F3.jpg" display:block="" width="50%" height="477px"></p>
+<h2 id="一-前言"><a href="#一-前言" class="headerlink" title="一  前言"></a>一  前言</h2><p>万丈高楼平地起，昨天我们把Hexo博客搭成了自己的小窝，那么今天！！！</p>
 <p>Terry告诉你：史上最全的next主题优化教程来了！</p>
 <p>来吧！和Terry一起把Hexo从小木屋搭成小洋楼！！！</p>
 <a id="more"></a>
@@ -1638,18 +1660,8 @@ show_date_time();
 
   
 
-  <!-- 页面点击小红心 -->
-
-<script type="text/javascript" src="/lib/clipboard/clipboard.js"></script>
-<script type="text/javascript" src="/js/src/custom.js"></script>
-<!-- 点击特效 -->
-<canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas>
-<script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
-<script type="text/javascript" src="/js/src/fireworks.js"></script>
-
-
-<script type="text/javascript" src="/lib/zclip/clipboard.min.js"></script>
-<script type="text/javascript" src="/js/src/custom.js"></script>
+  <!-- 小红心 -->
+<script type="text/javascript" src="/js/src/love.js"></script>
 
 <!--崩溃欺骗-->
 <script type="text/javascript" src="/js/src/crash_cheat.js"></script>
